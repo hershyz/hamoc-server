@@ -207,7 +207,7 @@ if __name__ == "__main__":
     t2 = Thread(target = app.run)
     t2.setDaemon(True)
     t2.start()
-    t1 = Thread(target = scheduler.init("http://127.0.0.1:5000"))
+    t1 = Thread(target = scheduler.init("http://hershyz.pythonanywhere.com/"))
     t1.setDaemon(True)
     t1.start()
     # app.run()
